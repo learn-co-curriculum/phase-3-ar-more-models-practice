@@ -26,7 +26,7 @@ cactus_2 = Plant.create(species: "Cactus", bought: "20200517", color: "green", f
 joel = PlantParent.create(name: "Joel", responsible: false, age: 10_000)
 sylwia = PlantParent.create(name: "Sylwia", responsible: true, age: 31)
 
-PlantParenthood.create(plant_id: prayer_plant.id, person_id: joel.id, affection:0)
+PlantParenthood.create(plant_id: prayer_plant.id, plant_parent_id: joel.id, affection:0)
 PlantParenthood.create(plant_id: basil.id, plant_parent_id: joel.id, affection:1)
 PlantParenthood.create(plant_id: basil.id, plant_parent_id: sylwia.id, affection:10)
 PlantParenthood.create(plant_id: corn_tree.id, plant_parent_id: sylwia.id, affection:10)
